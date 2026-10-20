@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123b70">
+<meta name="description" content="Welcome to INDU HIGHSCHOOL KALWARI. Explore our academics, admissions, school notices and activities.">
+<title>INDU HIGHSCHOOL KALWARI</title>
+<style>
+:root{--navy:#123b70;--blue:#1769aa;--gold:#f5bd48;--light:#f3f7fc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:Arial,sans-serif;color:#253247;line-height:1.6}
+header{background:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}
+.nav{max-width:1150px;margin:auto;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{color:var(--navy);font-weight:800;font-size:17px;text-decoration:none}
+.brand span{display:block;font-size:11px;color:var(--blue);letter-spacing:2px}
+nav{display:flex;gap:17px;align-items:center}
+nav a{color:#253247;text-decoration:none;font-size:13px;font-weight:bold}
+nav a:hover{color:var(--blue)}
+.menu{display:none;background:var(--navy);color:white;border:0;padding:8px 12px;border-radius:6px}
+.hero{background:linear-gradient(120deg,#102e59ee,#1769aad9),url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;padding:90px 6%;text-align:center}
+.hero .tag{color:var(--gold);font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.15;margin:16px auto;max-width:850px}
+.hero p{max-width:650px;margin:18px auto;color:#eef5ff}
+.btn{display:inline-block;background:var(--gold);color:#172b47;padding:12px 21px;border-radius:7px;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.btn2{display:inline-block;color:white;border:1px solid white;padding:11px 20px;border-radius:7px;text-decoration:none;margin-left:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--navy);color:white;text-align:center;padding:25px 4%;gap:12px}
+.stats strong{display:block;color:var(--gold);font-size:23px}
+section{padding:65px 6%}
+.wrap{max-width:1100px;margin:auto}
+.heading{text-align:center;margin-bottom:32px}
+.heading small{color:var(--blue);font-weight:bold;letter-spacing:2px}
+.heading h2{font-size:30px;color:var(--navy);margin:5px 0}
+.heading p{color:#68768a}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{padding:23px;background:white;border:1px solid #e2e9f2;border-radius:13px;box-shadow:0 5px 20px #123b700b}
+.card h3{color:var(--navy);margin-top:8px}
+.symbol{font-size:30px}
+.soft{background:var(--light)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img,.gallery img{width:100%;object-fit:cover;border-radius:12px}
+.about img{height:300px}
+ul{padding-left:20px}
+li{margin:7px 0}
+.notice{border-left:4px solid var(--gold);margin:12px 0;padding:15px;background:white;border-radius:5px}
+.notice strong{color:var(--navy)}
+.gallery img{height:190px}
+form{display:grid;gap:13px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:white}
+textarea{min-height:100px;resize:vertical}
+form .btn{background:var(--navy);color:white}
+.note{font-size:12px;color:#66758a}
+.contact{background:var(--navy);color:white}
+.contact h2,.contact h3{color:white}
+.contact a{color:var(--gold)}
+footer{background:#0b2343;color:#d8e3f3;padding:22px 6%;text-align:center;font-size:13px}
+@media(max-width:760px){
+ .menu{display:block}
+ nav{display:none;position:absolute;top:60px;left:0;right:0;background:white;padding:20px;box-shadow:0 8px 12px #0001;flex-direction:column;align-items:flex-start}
+ nav.open{display:flex}
+ .hero{padding:70px 6%}
+ .stats{padding:20px 3%}
+ .stats strong{font-size:19px}
+ section{padding:48px 5%}
+ .grid{grid-template-columns:1fr}
+ .about{grid-template-columns:1fr}
+ .gallery img{height:220px}
+ .btn2{margin:12px 0 0}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="nav">
+  <a class="brand" href="#home">INDU HIGHSCHOOL<span>KALWARI</span></a>
+  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Toggle menu">☰ Menu</button>
+  <nav>
+   <a href="#home">Home</a><a href="#about">About</a>
+   <a href="#academics">Academics</a><a href="#admissions">Admissions</a>
+   <a href="#notices">Notices</a><a href="#gallery">Gallery</a>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="wrap">
+  <div class="tag">WELCOME TO OUR SCHOOL</div>
+  <h1>INDU HIGHSCHOOL KALWARI</h1>
+  <p>A place to learn, grow, discover talents and build a brighter future through education.</p>
+  <a class="btn" href="#admissions">Admission Enquiry</a>
+  <a class="btn2" href="#about">Discover Our School</a>
+ </div>
+</section>
+
+<div class="stats">
+ <div><strong>Learn</strong>Knowledge for life</div>
+ <div><strong>Grow</strong>Skills and confidence</div>
+ <div><strong>Achieve</strong>A brighter future</div>
+</div>
+
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <div class="heading" style="text-align:left">
+    <small>ABOUT OUR SCHOOL</small>
+    <h2>Education With Purpose</h2>
+   </div>
+   <p>Welcome to INDU HIGHSCHOOL KALWARI. We aim to provide students with a supportive learning environment where they can develop knowledge, character, creativity and confidence.</p>
+   <p>Our school website is a place for families to find school information, admission enquiries, announcements and activity updates.</p>
+   <a class="btn" href="#contact">Contact Our School</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Students learning in a classroom" loading="lazy">
+ </div>
+</section>
+
+<section class="soft" id="academics">
+ <div class="wrap">
+  <div class="heading"><small>LEARNING & DEVELOPMENT</small><h2>Explore Our School</h2><p>Supporting learning, curiosity and all-round development.</p></div>
+  <div class="grid">
+   <article class="card"><div class="symbol">📚</div><h3>Quality Education</h3><p>Encouraging strong learning habits, understanding and academic progress.</p></article>
+   <article class="card"><div class="symbol">🔬</div><h3>Learning Activities</h3><p>Opportunities to explore ideas, ask questions and develop practical skills.</p></article>
+   <article class="card"><div class="symbol">🏆</div><h3>Sports & Culture</h3><p>Promoting teamwork, creativity, participation and personal development.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="admissions">
+ <div class="wrap">
+  <div class="heading"><small>JOIN OUR SCHOOL</small><h2>Admission Enquiry</h2><p>Interested in admission? Prepare your enquiry below.</p></div>
+  <div class="card" style="max-width:650px;margin:auto">
+   <form id="admissionForm">
+    <label>Parent / Guardian Name<input name="parent" required placeholder="Enter parent name"></label>
+    <label>Student Name<input name="student" required placeholder="Enter student name"></label>
+    <label>Class Applying For<select name="class" required><option value="">Select class</option><option>Nursery</option><option>LKG</option><option>UKG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></label>
+    <label>Parent Contact Number<input name="phone" type="tel" required placeholder="Enter contact number"></label>
+    <label>Message (optional)<textarea name="message" placeholder="Any questions for the school?"></textarea></label>
+    <button class="btn" type="submit">Prepare Enquiry</button>
+    <p class="note">Demo form: this page does not send or save enquiries. Connect an approved school email or form service before collecting real student information.</p>
+   </form>
+   <p id="formMessage" role="status"></p>
+  </div>
+ </div>
+</section>
+
+<section class="soft" id="notices">
+ <div class="wrap">
+  <div class="heading"><small>STAY INFORMED</small><h2>Latest Notices</h2><p>Official announcements from the school.</p></div>
+  <div class="grid">
+   <article class="card"><div class="symbol">📢</div><h3>School Announcements</h3><p>Official school updates will be published here.</p><small>Notice date: To be updated</small></article>
+   <article class="card"><div class="symbol">📝</div><h3>Examination Updates</h3><p>Check this section for examination schedules and instructions.</p><small>Notice date: To be updated</small></article>
+   <article class="card"><div class="symbol">📅</div><h3>Events & Holidays</h3><p>School events and holiday information will appear here.</p><small>Notice date: To be updated</small></article>
+  </div>
+ </div>
+</section>
+
+<section id="gallery">
+ <div class="wrap">
+  <div class="heading"><small>SCHOOL LIFE</small><h2>Photo Gallery</h2><p>Highlights of learning and school activities.</p></div>
+  <div class="grid gallery">
+   <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Students studying" loading="lazy">
+   <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=600&q=80" alt="Students participating in activities" loading="lazy">
+   <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Classroom learning" loading="lazy">
+  </div>
+  <p class="note" style="text-align:center">Sample photos are shown. Replace them with photographs approved by the school.</p>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="heading"><small>GET IN TOUCH</small><h2>Contact Our School</h2><p style="color:#e0eafa">For admission information and school enquiries.</p></div>
+  <div class="grid">
+   <div><h3>📍 School Address</h3><p>Kalwari<br>Please confirm the full official postal address.</p></div>
+   <div><h3>📞 Phone</h3><p>Please add the school's official contact number.</p></div>
+   <div><h3>✉️ Email</h3><p>Please add the school's official email address.</p></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <p>© <span id="year"></span> INDU HIGHSCHOOL KALWARI. All rights reserved.</p>
+ <p>Learning today, leading tomorrow.</p>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+document.getElementById('admissionForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ document.getElementById('formMessage').textContent='This is a demo only. Your enquiry has not been sent. Please contact the school directly.';
+});
+</script>
+</body>
+  </html>
+     
